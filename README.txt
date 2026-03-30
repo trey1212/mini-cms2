@@ -1,10 +1,14 @@
 Open command line terminals inside the backend and frontend folders
 
 Backend terminal:
-Download dependencies: composer install
+Download dependencies: 
+- composer install
+- npm install
+- npm run build
+Copy the .env file: cp .env.example .env
+Generate a key for .env: php artisan key:generate
 
-The database has data in it already, but to rebuild it, enter: 
-php artisan migrate:fresh --seed
+Build the database: php artisan migrate:fresh --seed
 
 Run the PHP server: php artisan serve
 
