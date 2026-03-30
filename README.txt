@@ -23,4 +23,4 @@ To view the frontend go to: localhost:5173
 
 
 NOTES:
-- Make sure backend is running first otherwise no data would appear on frontend
+- Make sure backend is running first otherwise no data will appear on frontend
