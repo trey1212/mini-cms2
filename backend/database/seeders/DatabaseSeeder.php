@@ -19,6 +19,14 @@ class DatabaseSeeder extends Seeder
             'updated_at' => now()
         ]);
 
+        // Create a long article
+        DB::table('articles')->insert([
+            'title' => "Long Article",
+            'content' => "<p>This is a long article content. " . str_repeat("Lorem ipsum dolor sit amet, consectetur adipiscing elit. ", 20) . "</p>",
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
         // Create 6 articles
         for ($i = 1; $i <= 6; $i++) {
             DB::table('articles')->insert([
